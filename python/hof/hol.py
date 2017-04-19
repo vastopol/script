@@ -1,4 +1,6 @@
-# high order
+# high order functions
+import operator
+import math
 
 # flatten nested sublists into one list
 def flatten(list):
