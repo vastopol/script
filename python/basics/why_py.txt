@@ -173,3 +173,10 @@ $ python prgm.py sean rich
 
 import sys
 print("hello" + sys.argv[1] + sys.argv[2])
+
+#---------------------------
+
+reverse a string
+
+word = word[::-1] # reverse order
+
