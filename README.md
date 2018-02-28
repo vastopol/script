@@ -1,5 +1,5 @@
 # script
 scripting languages
 
-code for bash, python, perl, tcl, ...
+code for awk, bash, perl, tcl, ...
 
