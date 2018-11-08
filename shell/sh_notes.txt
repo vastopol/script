@@ -1,0 +1,26 @@
+
+capture results of evals
+
+VAR=""
+
+echo "old:"
+echo $VAR
+
+VAR=$(eval "str")
+
+echo "new:"
+echo $VAR
+
+---------------------------------------
+
+reading files:
+
+while read -r VAR
+do
+    ...
+done < file
+
+---------------------------------------
+
+
+

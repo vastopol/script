@@ -1,5 +1,5 @@
 # script
-scripting languages
 
-code for awk, bash, perl, tcl, ...
+scripting languages: awk, bash, perl, tcl, ...
 
+The main emphasis is on shell programming with BASH.
