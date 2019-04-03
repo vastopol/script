@@ -1,0 +1,4 @@
+output the result of a command to a tmp file which is catted out
+
+cat <(echo "hello")
+

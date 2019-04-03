@@ -1,0 +1,4 @@
+git status of different directory
+when has a big folder of git repos
+
+echo "$(cd ../folder && git status)"

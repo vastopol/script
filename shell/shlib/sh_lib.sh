@@ -4,8 +4,9 @@
 # this will include useful functions
 
 # test function
-function say_hello()
+function fprinter()
 {
-    echo "Hello"
+    for F in $@ ; do
+        file $F
+    done
 }
-

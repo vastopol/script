@@ -1,0 +1,3 @@
+untar all tar files in a dir
+
+for a in `ls -1 *.tar.gz`; do gzip -dc $a | tar xf -; done
