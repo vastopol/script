@@ -13,8 +13,13 @@ function main()
 {
     # variables
     FLAG="$1"
-    ARG_ARRAY=$@
+    ARG_ARRAY="$@"
     FILES=("${ARG_ARRAY[@]:2}")
+
+    if [ $# -eq 0 ] ; then
+        echo "Missing arguments"
+        exit 1
+    fi
 
     case $FLAG in
         -p) #----------------------------------------
