@@ -11,22 +11,20 @@ source sh_lib.sh
 # main procedure
 function main()
 {
-    # variables
-    FLAG="$1"
-    ARG_ARRAY="$@"
-    FILES=("${ARG_ARRAY[@]:2}")
+    # separate user input
+    IFS=' ' read -r FLAG ARGS <<< "$@"
 
     if [ $# -eq 0 ] ; then
-        echo "Missing arguments"
+        echo "Error: Missing flag/arguments"
         exit 1
     fi
 
     case $FLAG in
         -p) #----------------------------------------
-                fprinter $FILES
+                fprinter $ARGS
             ;;
         *)  #----------------------------------------
-                echo "invalid option"
+                echo "Error: Invalid flag option"
                 exit 1
             ;;
     esac
