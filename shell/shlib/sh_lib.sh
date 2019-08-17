@@ -6,7 +6,7 @@
 # test function
 function fprinter()
 {
-    for F in $@ ; do
+    for F in "$@" ; do
         file $F
     done
 }

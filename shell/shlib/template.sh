@@ -35,4 +35,4 @@ function main()
 #----------------------------------------
 
 # call main procedure and pass command line arguments
-main $@
+main "$@"
